@@ -6,6 +6,7 @@ Description:
 Version: 6.3.0
 """
 
+# Importing the required libraries
 import json
 import logging
 import os
@@ -20,6 +21,18 @@ from discord.ext.commands import Context
 from dotenv import load_dotenv
 
 from database import DatabaseManager
+
+# Aaron's stuff
+from keep_alive import keep_alive
+from discord.ext import commands
+from apscheduler.schedulers.asyncio import AsyncIOScheduler
+from datetime import datetime, timedelta
+
+# Ryan's stuff
+import requests
+import sympy
+import wikipedia
+import asyncio
 
 load_dotenv()
 
